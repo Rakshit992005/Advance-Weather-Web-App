@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ece9e9;
+}
+
+
+.nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.nav img{
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin-top: 20px;
+    background-color: red;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.search-box{
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ece9e9;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search-box input{
+    height: 25px;
+    width: 70%;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px 0 10px;
+    background-color: white;
+
+}
+.search-box button{
+    height: 25px;
+    width: 100px;
+    background-color: black;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 9px;
+    border-radius: 5px;
+    border: none;
+}
+.search-box button img{
+    height: 9px;
+    width: 9px;
+    margin-right: 5px;
+}
+
+.search-box button:active{
+    transform: scale(1.01);
+    transition: transform 0.1s;
+}
+
+.main-container{
+    background-color: #3911c9;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.temp-part{
+    background-color: #55d17a;
+    display: flex;
+
+}
+
+.temp-part img{
+    height: 40px;
+    width: 40px;
+    margin: 20px auto;
+}
+.weather-icon{
+    background-color: #cac71d;
+}
+.details{
+    background-color: #743f3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

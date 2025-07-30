@@ -4,6 +4,7 @@
 }
 body{
     background-color: #ece9e9;
+    font-family: poppins;
 }
 
 
@@ -78,16 +79,19 @@ body{
 }
 
 .main-container{
-    background-color: #3911c9;
-    height: 45%;
+    background-color: #ece9e9;
+    height: 130px;
     display: flex;
     flex-direction: column;
-
+    margin: 0px 27px ;
+    border-radius: 5px;
+    padding: 0px 10px;
 }
 
+
 .temp-part{
-    background-color: #55d17a;
     display: flex;
+    border-radius: 5px;
 
 }
 
@@ -96,19 +100,37 @@ body{
     width: 40px;
     margin: 20px auto;
 }
+
 .weather-icon{
-    background-color: #cac71d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
 }
 .details{
-    background-color: #743f3f;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0px 10px;
 }
 .min-max img{
-    height: 10px;
-    width: 10px;
+    height: 9px;
+    width: 9px;
     margin: 0 5px;
+}
+.min-max{
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+}
+.description{
+    font-size: 10px;
+}
 
+.temp{
+    font-size: 25px;
+}
+.feels-like{
+    font-size: 10px;
 }
 

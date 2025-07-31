@@ -3,30 +3,33 @@
     padding: 0;
 }
 body{
-    background-color: #ece9e9;
+    background-color: white;
     font-family: poppins;
 }
 
 
 .nav{
-    height: 10%;
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: white;
+    align-items: center;
+    background-color: #c2c0c0;
+    font-size: 50px;
+    gap: 20px;
 }
 .nav img{
-    height: 25px;
-    width: 25px;
+    height: 60px;
+    width: 60px;
     margin-left: 10px;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    height: 125vh;
+    height: 765px;
     margin-top: 20px;
-    background-color: red;
+    background-color: white;
     width: 80%;
     margin: 10px auto;
     border-radius: 5px;
@@ -168,6 +171,11 @@ body{
     align-items: center;
     gap: 20px;
     font-size: 25px;
+}
+.card-details img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
 }
 
 

@@ -142,70 +142,37 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #cc1fbe;
     gap: 20px;
     height: 340px;
 }
-.row-1{
-    background-color: #d2e00f;
-    display: flex;
-    gap: 20px;
-}
 
-.humidity{
+
+.card-4{
     height: 150px;
     width: 400px;
-    background-color: #6206f7;
+    background-color: #ece9e9;
     height: 185px;
     width: 725px;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
+.row{
+    display: flex;
+    gap: 20px;
+}
 
-.humidity-details{
+.card-details{
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 25px;
 }
 
-.wind{
-    height: 150px;
-    width: 400px;
-    background-color: #df487a;
-    height: 185px;
-    width: 725px;
-}
 
-.row-2{
-    display: flex;
-    background-color: #0cac41;
-    gap: 20px;
-}
-
-.sun-time{
-    height: 150px;
-    width: 400px;
-    background-color: #b68888;
-    height: 185px;
-    width: 725px;
-}
 .third-container h3{
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
-}
-.sun-details{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 25px;
-}
-.visiblity{
-    height: 150px;
-    width: 400px;
-    background-color: #93e0b4;
-    height: 185px; 
-    width: 725px;      
 }

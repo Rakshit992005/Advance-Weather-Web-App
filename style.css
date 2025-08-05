@@ -42,7 +42,7 @@ body{
     align-items: center;
     justify-content: space-around;
     background-color: #ece9e9;
-    width: 95.8%;
+    width: 1470px;
     margin: 20px auto;
     border-radius: 5px;
 }
@@ -83,16 +83,18 @@ body{
 
 .main-container{
     background-color: #ece9e9;
-    height: 185px;
+    height: 250px;
+    width: 1470px;
     display: flex;
     flex-direction: column;
     margin: 0px 27px ;
     border-radius: 5px;
     padding: 0px 10px;
+   
 }
 
 .city-name{
-    font-size: 30px;
+    font-size: 40px;
 }
 .temp-part{
     display: flex;
@@ -101,8 +103,8 @@ body{
 }
 
 .temp-part img{
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     margin: 20px auto;
 }
 
@@ -120,24 +122,25 @@ body{
     height: 100%;
 }
 .min-max img{
-    height: 9px;
-    width: 9px;
+    height: 20px;
+    width: 20px;
     margin: 0 5px;
 }
 .min-max{
     display: flex;
     gap: 20px;
-    font-size: 12px;
+    font-size: 20px;
+    margin-top: 9px;
 }
 .description{
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .temp{
-    font-size: 25px;
+    font-size: 60px;
 }
 .feels-like{
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .third-container{

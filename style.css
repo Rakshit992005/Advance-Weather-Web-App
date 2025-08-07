@@ -27,6 +27,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 765px;
     margin-top: 20px;
     background-color: white;
@@ -38,11 +39,11 @@ body{
 
 .search-box{
     display: flex;
+    width: 1491px;
     height: 85px;
     align-items: center;
     justify-content: space-around;
     background-color: #ece9e9;
-    width: 1470px;
     margin: 20px auto;
     border-radius: 5px;
 }
@@ -154,11 +155,9 @@ body{
 
 
 .card-4{
-    height: 150px;
-    width: 400px;
     background-color: #ece9e9;
     height: 185px;
-    width: 725px;
+        width: 735px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;

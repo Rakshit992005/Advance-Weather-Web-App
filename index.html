@@ -23,12 +23,12 @@
     <main>
         <div class="container">
             <div class="search-box">
-                <input type="text" id="search-input" placeholder="Enter city name...">
-                <button id="search-button"><img src="search.png" alt="">Search</button>
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-button" onclick="getWeather()"><img src="search.png" alt="">Search</button>
             </div>
 
             <div class="main-container">
-                <div class="city-name">
+                <div class="city-name" id="city">
                     Mumbai
                 </div>
                 <div class="temp-part">
@@ -36,17 +36,18 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/414/414927.png" alt="Weather Icon">
                     </div>
                     <div class="details">
-                        <div class="description">Sunny</div>
+                        <div class="description" >Sunny</div>
                         <div class="temp">30°C</div>
                         <div class="feels-like">Feels like 31°C</div>
                     </div>
                 </div>
                 <div class="min-max">
                     <div>
-                        <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>min: 25°C
+                        <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
+                        min: <span id="min-temp">25</span>°C
                     </div>
-                    <div> <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>max:
-                        35°C
+                    <div> <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
+                        max: <span id="max-temp">35</span>°C
                     </div>
                 </div>
 
@@ -60,8 +61,8 @@
                         <div class="card-details">
                             <samp><img src="https://cdn-icons-png.flaticon.com/128/7614/7614332.png" alt=""></samp>
                             <div>
-                                Humidity: 60% <br>
-                                Pressure: 60%
+                                Humidity: <span id="hum">60</span>% <br>
+                                Pressure: <span id="pre">60</span> bar
                             </div>
                         </div>
                     </div>

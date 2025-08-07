@@ -67,13 +67,13 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 9px;
+    font-size: 19px;
     border-radius: 5px;
     border: none;
 }
 .search-box button img{
-    height: 9px;
-    width: 9px;
+    height: 18px;
+    width: 18px;
     margin-right: 5px;
 }
 
@@ -185,4 +185,8 @@ body{
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
 }

@@ -28,30 +28,35 @@
             </div>
 
             <div class="main-container">
-                <div class="city-name" id="city">
-                    Mumbai
-                </div>
-                <div class="temp-part">
-                    <div class="weather-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/128/414/414927.png" alt="Weather Icon">
-                    </div>
-                    <div class="details">
-                        <div class="description" >Sunny</div>
-                        <div class="temp">30°C</div>
-                        <div class="feels-like">Feels like 31°C</div>
-                    </div>
-                </div>
-                <div class="min-max">
-                    <div>
-                        <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
-                        min: <span id="min-temp">25</span>°C
-                    </div>
-                    <div> <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
-                        max: <span id="max-temp">35</span>°C
-                    </div>
-                </div>
+  <div class="city-name" id="city">
+    Loading...
+  </div>
 
-            </div>
+  <div class="temp-part">
+    <div class="weather-icon">
+      <!-- Placeholder icon while loading -->
+      <img src="https://cdn-icons-png.flaticon.com/128/1163/1163624.png" alt="Loading Icon">
+    </div>
+
+    <div class="details">
+      <div class="description">Please wait...</div>
+      <div class="temp">--°C</div>
+      <div class="feels-like">Feels like --°C</div>
+    </div>
+  </div>
+
+  <div class="min-max">
+    <div>
+      <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
+      min: <span id="min-temp">--</span>°C
+    </div>
+    <div>
+      <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
+      max: <span id="max-temp">--</span>°C
+    </div>
+  </div>
+</div>
+
             <div class="third-container">
                 <div class="row">
                     <div class="card-4">
@@ -61,8 +66,8 @@
                         <div class="card-details">
                             <samp><img src="https://cdn-icons-png.flaticon.com/128/7614/7614332.png" alt=""></samp>
                             <div>
-                                Humidity: <span id="hum">60</span>% <br>
-                                Pressure: <span id="pre">60</span> bar
+                                Humidity: <span id="hum"></span>% <br>
+                                Pressure: <span id="pre"></span> bar
                             </div>
                         </div>
                     </div>
@@ -72,7 +77,7 @@
                         </div>
                         <div class="card-details">
                             <samp><img src="https://cdn-icons-png.flaticon.com/128/11742/11742598.png" alt=""></samp>
-                            Wind: 10 km/h
+                           <div> Wind: <span id="wind"></span> km/h</div>
                         </div>
                     </div>
                 </div>
@@ -83,8 +88,10 @@
                         </div>
                         <div class="card-details">
                             <span><img src="https://cdn-icons-png.flaticon.com/128/4607/4607614.png" alt=""></span>
-                            sunrise: 6:00 AM <br>
-                            sunset: 6:30 PM
+                           <div class="flex">
+                            <div>sunrise: <span id="sun-rise"></span></div>
+                            <div>sunset: <span id="sun-set"></span></div>
+                           </div>
                         </div>
 
                     </div>
@@ -94,7 +101,7 @@
                         </div>
                         <div class="card-details">
                             <samp><img src="https://cdn-icons-png.flaticon.com/128/1956/1956095.png" alt=""></samp>
-                            Visibility: 10 km
+                            <div>Visibility: <span id="visi"></span> Km</div>
                         </div>
                     </div>
                 </div>

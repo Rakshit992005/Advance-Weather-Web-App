@@ -21,7 +21,7 @@ function getWeather(){
                 const description = data.weather[0].description;
                 const icon = data.weather[0].icon;
                 const minTemp= data.main.temp_min;
-                const maxTemp= data.main.temp_min;
+                const maxTemp= data.main.temp_max;
                 const feelsLike = data.main.feels_like;
                 const humidity = data.main.humidity;
                 const windSpeed = data.wind.speed;
@@ -29,6 +29,9 @@ function getWeather(){
                 const pressure = data.main.pressure;
                 const sunrise =data.sys.sunrise;
                 const sunset =data.sys.sunset;
+                const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+                const sunriseTime = new Date(sunrise * 1000).toLocaleTimeString('en-US', options);
+                const sunsetTime = new Date(sunset * 1000).toLocaleTimeString('en-US', options);
 
 
                 document.getElementById("city").innerHTML = city.charAt(0).toUpperCase() + city.substring(1);
@@ -41,6 +44,10 @@ function getWeather(){
 
                 document.getElementById("hum").innerHTML= humidity;
                 document.getElementById("pre").innerHTML= (pressure/1000).toFixed(3);
+                document.getElementById("sun-rise").innerHTML= sunriseTime;
+                document.getElementById("sun-set").innerHTML= sunsetTime;
+                document.getElementById("visi").innerHTML = visibility;
+                document.getElementById("wind").innerHTML= windSpeed;
 
             
             }

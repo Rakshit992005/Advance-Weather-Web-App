@@ -42,7 +42,7 @@ body{
     width: 1491px;
     height: 85px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #ece9e9;
     margin: 20px auto;
     border-radius: 5px;
@@ -50,7 +50,7 @@ body{
 
 .search-box input{
     height: 55px;
-    width: 80%;
+    width: 72%;
     margin: 0 10px;
     border-radius: 5px;
     border: none;

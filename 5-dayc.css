@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ece9e9;
+    font-family: poppins;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.temp{
+    display: flex;
+    gap: 5px;
+}
+
+.feel-temp{
+    font-size: 20px;
+    align-self:flex-end;
+    margin-bottom: 3px;
+}
+.description{
+    font-size: 20px;
+    color: #a19595;
+}

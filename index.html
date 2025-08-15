@@ -25,38 +25,39 @@
             <div class="search-box">
                 <input type="text" id="city-input" placeholder="Enter city name...">
                 <button class="search-butto" onclick="getWeather()"><img src="search.png" alt="">Search</button>
-                <button id="getLocation" ><img src="https://cdn-icons-png.flaticon.com/128/684/684908.png" alt="">Location</button>
+                <button id="getLocation"><img src="https://cdn-icons-png.flaticon.com/128/684/684908.png"
+                        alt="">Location</button>
             </div>
 
             <div class="main-container">
-  <div class="city-name" id="city">
-    Loading...
-  </div>
+                <div class="city-name" id="city">
+                    Loading...
+                </div>
 
-  <div class="temp-part">
-    <div class="weather-icon">
-      <!-- Placeholder icon while loading -->
-      <img src="https://cdn-icons-png.flaticon.com/128/1163/1163624.png" alt="Loading Icon">
-    </div>
+                <div class="temp-part">
+                    <div class="weather-icon">
+                        <!-- Placeholder icon while loading -->
+                        <img src="https://cdn-icons-png.flaticon.com/128/1163/1163624.png" alt="Loading Icon">
+                    </div>
 
-    <div class="details">
-      <div class="description">Please wait...</div>
-      <div class="temp">--°C</div>
-      <div class="feels-like">Feels like --°C</div>
-    </div>
-  </div>
+                    <div class="details">
+                        <div class="description">Please wait...</div>
+                        <div class="temp">--°C</div>
+                        <div class="feels-like">Feels like --°C</div>
+                    </div>
+                </div>
 
-  <div class="min-max">
-    <div>
-      <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
-      min: <span id="min-temp">--</span>°C
-    </div>
-    <div>
-      <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
-      max: <span id="max-temp">--</span>°C
-    </div>
-  </div>
-</div>
+                <div class="min-max">
+                    <div>
+                        <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
+                        min: <span id="min-temp">--</span>°C
+                    </div>
+                    <div>
+                        <samp><img src="https://cdn-icons-png.flaticon.com/128/2426/2426702.png" alt=""></samp>
+                        max: <span id="max-temp">--</span>°C
+                    </div>
+                </div>
+            </div>
 
             <div class="third-container">
                 <div class="row">
@@ -78,8 +79,8 @@
                         </div>
                         <div class="card-details">
                             <samp><img src="https://cdn-icons-png.flaticon.com/128/11742/11742598.png" alt=""></samp>
-                           <div> Wind Speed: <span id="wind"></span> km/h</div>
-                           
+                            <div> Wind Speed: <span id="wind"></span> km/h</div>
+
                         </div>
                     </div>
                 </div>
@@ -90,10 +91,10 @@
                         </div>
                         <div class="card-details">
                             <span><img src="https://cdn-icons-png.flaticon.com/128/4607/4607614.png" alt=""></span>
-                           <div class="flex">
-                            <div>sunrise: <span id="sun-rise"></span></div>
-                            <div>sunset: <span id="sun-set"></span></div>
-                           </div>
+                            <div class="flex">
+                                <div>sunrise: <span id="sun-rise"></span></div>
+                                <div>sunset: <span id="sun-set"></span></div>
+                            </div>
                         </div>
 
                     </div>
@@ -108,7 +109,11 @@
                     </div>
                 </div>
             </div>
+
     </main>
+    <div class="five-day-forcast">
+        <button id="5-day-btn" >See 5 day Forecast</button>
+    </div>
 
     <script src="script.js"></script>
 </body>

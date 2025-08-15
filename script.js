@@ -233,6 +233,8 @@ function detailsFetching(url) {
                 const sunriseTime = new Date(sunrise * 1000).toLocaleTimeString('en-US', options);
                 const sunsetTime = new Date(sunset * 1000).toLocaleTimeString('en-US', options);
 
+                localStorage.setItem("selectedCity", city);
+
                 document.getElementById("city").innerText = city.charAt(0).toUpperCase() + city.substring(1);
                 document.querySelector(".description").innerHTML = description.charAt(0).toUpperCase() + description.substring(1);
                 document.querySelector(".temp").innerHTML = temp + "°C";
@@ -282,4 +284,18 @@ locationButton.addEventListener("click", () => {
 });
 
 console.log("script.js loaded");
+
+document.getElementById("5-day-btn").addEventListener("click", () => {
+
+    const city = document.getElementById("city-input").value;
+    if (!city) {
+        alert("Please Enter a City Name");
+        return;
+    }
+    const storedCity = sessionStorage.getItem("selectedCity");
+
+    window.location.href = "5-day.html";
+});
+
+
 

@@ -9,18 +9,18 @@ body{
 
 
 .nav{
-    height: 90px;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ece9e9;
-    font-size: 50px;
+    font-size: 30px;
     gap: 20px;
 }
 .nav img{
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     margin-left: 10px;
 }
 
@@ -44,7 +44,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #ece9e9;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 5px;
 }
 
@@ -58,7 +58,7 @@ body{
     background-color: white;
 
 }
-.search-box button{
+ button{
     height: 50px;
     width: 160px;
     background-color: black;
@@ -189,5 +189,24 @@ body{
 .flex{
     display: flex;
     flex-direction: column;
+}
+
+.five-day-forcast{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.five-day-forcast button{
+    height: 50px;
+    width: 1491px;
+    background-color: black;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 19px;
+    border-radius: 5px;
+    border: none;   
 }
 

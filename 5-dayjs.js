@@ -3,6 +3,8 @@ const city = localStorage.getItem("selectedCity");
 const apiKey = "866bcfd4de68b79405f18aba7110db91";
 const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
+document.querySelector(".city-name").textContent = city;
+
 fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -34,6 +36,7 @@ fetch(url)
         const dayList = document.querySelectorAll(".day");
         const dateList = document.querySelectorAll(".month-date");
         const feelList = document.querySelectorAll(".feel-temp");
+        const imgs = document.querySelectorAll(".weather-img img"); // FIXED
 
         for (let i = 0; i < daysCount; i++) {
             const item = dailyData[i];
@@ -44,6 +47,9 @@ fetch(url)
             dayList[i].textContent = dateObj.toLocaleDateString('en-US', { weekday: 'long' });
             dateList[i].textContent = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
             feelList[i].textContent = item.main.feels_like.toFixed(1) + "°C";
+
+            const iconCode = item.weather[0].icon; // FIXED
+            imgs[i].src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`; // Use .src if <img>
         }
     })
     .catch(error => console.error("Error fetching forecast:", error));

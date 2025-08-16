@@ -283,7 +283,6 @@ locationButton.addEventListener("click", () => {
     navigator.geolocation.getCurrentPosition(gotLocation, failedToGet);
 });
 
-console.log("script.js loaded");
 
 document.getElementById("5-day-btn").addEventListener("click", () => {
 

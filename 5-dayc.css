@@ -54,4 +54,20 @@ p{
 }
 .description{
     font-size: 20px;
+    
+  text-transform: capitalize;
+}
+
+.cur-temp{
+    font-size: 35px;
+}
+.day{
+    font-size: 35px;
+}
+.month-date{
+    font-size: 25px;
+}
+img{
+    height: 150px;
+    width: 150px;
 }

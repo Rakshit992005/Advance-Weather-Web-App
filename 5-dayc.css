@@ -9,7 +9,7 @@ body{
 }
 
 header{
-    height: 300px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,12 +35,37 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 350px;
+    height: 365px;
     width: 300px;
     border-radius: 10px;
     font-size: 25px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+}
+.on-click{
+    height: 600px;
+    width: 400px;
+    scale: 1.2;
+}
+.clk {
+    height: 20px;
+    width: 20px;
 
+}
+.invis{
+    display: none;
+}
+.more-info{
+    width: 90%;
+    font-size: 20px;
+}
+.more-info div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.more-info span{
+    text-align: right;
 }
 .temp{
     display: flex;
@@ -53,9 +78,8 @@ p{
     margin-bottom: 3px;
 }
 .description{
-    font-size: 20px;
-    
-  text-transform: capitalize;
+    font-size: 25px;
+    text-transform: capitalize;
 }
 
 .cur-temp{

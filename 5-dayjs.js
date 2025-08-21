@@ -36,7 +36,8 @@ fetch(url)
         const dayList = document.querySelectorAll(".day");
         const dateList = document.querySelectorAll(".month-date");
         const feelList = document.querySelectorAll(".feel-temp");
-        const imgs = document.querySelectorAll(".weather-img img"); // FIXED
+        const imgs = document.querySelectorAll(".weather-img img");
+        const cards = document.querySelectorAll(".card");
 
         for (let i = 0; i < daysCount; i++) {
             const item = dailyData[i];
@@ -48,8 +49,35 @@ fetch(url)
             dateList[i].textContent = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
             feelList[i].textContent = item.main.feels_like.toFixed(1) + "°C";
 
-            const iconCode = item.weather[0].icon; // FIXED
-            imgs[i].src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`; // Use .src if <img>
+            const iconCode = item.weather[0].icon;
+            imgs[i].src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+            // Click event for each card (accordion style)
+            cards[i].addEventListener("click", () => {
+                const isOpen = cards[i].classList.contains("on-click");
+
+                // Close all cards first
+                cards.forEach(c => {
+                    c.classList.remove("on-click");
+                    c.querySelector(".clk").classList.remove("invis");
+                    c.querySelector(".more-info").classList.add("invis");
+                });
+
+                // If clicked card wasn’t open → open it
+                if (!isOpen) {
+                    cards[i].classList.add("on-click");
+                    cards[i].querySelector(".clk").classList.add("invis");
+                    cards[i].querySelector(".more-info").classList.remove("invis");
+
+                    // Fill in extra info for that day's forecast
+                    cards[i].querySelector(".min-temp").textContent = item.main.temp_min + " °C";
+                    cards[i].querySelector(".max-temp").textContent = item.main.temp_max + " °C";
+                    cards[i].querySelector(".humidity").textContent = item.main.humidity + " %";
+                    cards[i].querySelector(".pressure").textContent = (item.main.pressure / 1000).toFixed(2) + " bar";
+                    cards[i].querySelector(".wind-speed").textContent = item.wind.speed + " Km/H";
+                    cards[i].querySelector(".visibility").textContent = (item.visibility / 1000).toFixed(1) + " Km";
+                }
+            });
         }
     })
     .catch(error => console.error("Error fetching forecast:", error));

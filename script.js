@@ -1,12 +1,10 @@
-console.log("started");
-
 const apiKey = "866bcfd4de68b79405f18aba7110db91";
 
 function detailsFetching(url) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            console.log(data)
             if (data.cod === "404") {
                 window.location.href = "404.html";
             } else {
@@ -24,10 +22,6 @@ function detailsFetching(url) {
                 const sunrise = data.sys.sunrise;
                 const sunset = data.sys.sunset;
                 const countryCode = data.sys.country;
-                console.log(countryCode);
-
-                console.log(sunrise)
-                console.log(sunset)
 
                 const countryToTimezone = {
                     "AF": "Asia/Kabul",
@@ -234,6 +228,7 @@ function detailsFetching(url) {
                 const sunsetTime = new Date(sunset * 1000).toLocaleTimeString('en-US', options);
 
                 localStorage.setItem("selectedCity", city);
+                document.querySelector("#city-input").value = city;
 
                 document.getElementById("city").innerText = city.charAt(0).toUpperCase() + city.substring(1);
                 document.querySelector(".description").innerHTML = description.charAt(0).toUpperCase() + description.substring(1);
@@ -264,19 +259,17 @@ function getWeather() {
     detailsFetching(url);
 }
 
-console.log("Location fetching started");
 const locationButton = document.getElementById("getLocation");
 
 function gotLocation(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    console.log(lat, lon);
     const lurl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=en`;
     detailsFetching(lurl);
 }
 
 function failedToGet() {
-    console.log("There was some issue in fetching location");
+    alert("There was some issue in fetching location");
 }
 
 locationButton.addEventListener("click", () => {

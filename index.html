@@ -24,7 +24,7 @@
         <div class="container">
             <div class="search-box">
                 <input type="text" id="city-input" placeholder="Enter city name...">
-                <button class="search-butto" onclick="getWeather()"><img src="search.png" alt="">Search</button>
+                <button class="search-butto" onclick="getWeather()"><img src="https://cdn-user-icons.flaticon.com/209411/209411508/1753855123885.svg?token=exp=1755790657~hmac=e852d1635b44dd3fbd58aee8cff98d05" alt="">Search</button>
                 <button id="getLocation"><img src="https://cdn-icons-png.flaticon.com/128/684/684908.png"
                         alt="">Location</button>
             </div>
@@ -36,7 +36,6 @@
 
                 <div class="temp-part">
                     <div class="weather-icon">
-                        <!-- Placeholder icon while loading -->
                         <img src="https://cdn-icons-png.flaticon.com/128/1163/1163624.png" alt="Loading Icon">
                     </div>
 
@@ -79,7 +78,7 @@
                         </div>
                         <div class="card-details">
                             <samp><img src="https://cdn-icons-png.flaticon.com/128/11742/11742598.png" alt=""></samp>
-                            <div> Wind Speed: <span id="wind"></span> km/h</div>
+                            <div> Wind Speed: <span id="wind"></span> km/H</div>
 
                         </div>
                     </div>
@@ -107,12 +106,13 @@
                             <div>Visibility: <span id="visi"></span> Km</div>
                         </div>
                     </div>
-                </div>
+                </div>                                             
             </div>
+        </div>
 
     </main>
     <div class="five-day-forcast">
-        <button id="5-day-btn" >See 5 day Forecast</button>
+        <button id="5-day-btn">See 5 day Forecast</button>
     </div>
 
     <script src="script.js"></script>

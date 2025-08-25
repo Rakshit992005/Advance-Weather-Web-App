@@ -1,4 +1,3 @@
-const apiKey = "866bcfd4de68b79405f18aba7110db91";
 
 function detailsFetching(url) {
     fetch(url)

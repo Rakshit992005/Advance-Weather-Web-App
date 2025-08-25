@@ -1,6 +1,5 @@
 const city = localStorage.getItem("selectedCity");
 
-const apiKey = "866bcfd4de68b79405f18aba7110db91";
 const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
 document.querySelector(".city-name").textContent = city;
